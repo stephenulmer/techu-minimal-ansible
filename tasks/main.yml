@@ -1,0 +1,5 @@
+---
+- name: Fill template and copy to target
+  template:
+    src: server-info.j2
+    dest: /tmp/server-info.txt
