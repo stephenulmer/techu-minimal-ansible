@@ -6,7 +6,7 @@ driver:
 lint: |
   set -e
   yamllint .
-  ansible-lint .
+  ansible-lint
   flake8
 platforms:
   - name: instance
@@ -14,4 +14,5 @@ platforms:
 provisioner:
   name: ansible
 verifier:
-  name: testinfra
+  name: ansible
+  enabled: False
